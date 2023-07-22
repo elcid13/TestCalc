@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function marks()
+{
+  var numOne, numTwo, sum;
+  numOne = parseFloat(document.getElementById("Correct").value);
+  numTwo = parseFloat(document.getElementById("Wrong").value);
+  sum = numOne*2 - numTwo*.66;
+  document.getElementById("answer").value = sum;
+}
+</script>
+</head>
+<body>
+<table width="350px" border="1px">
+<table width="350px" border="2px">
+                <tr>
+                    <th colspan="2">UPSC Marks</th>
+                </tr>     </table> 
+<p>No. of Correct Questions: <input id="Correct"></p>
+<p>No. of Correct Questions: <input id="Wrong"></p>
+<button onclick="marks()">Total Marks</button>
+<p>Total = <input id="answer"></p>
+</table>
+</body>
+</html>
